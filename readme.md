@@ -1,4 +1,4 @@
-#Pattern Classification Using CNNs (Convolutional Neural Networks)
+# Pattern Classification Using CNNs (Convolutional Neural Networks)
 
 Convolutional Neural Networks (CNNs) are widely used in pattern classification. 
 CNN is a multi layer perceptron (MLP) designed specifically to recognize small dimensional shapes with a higher degree 
@@ -7,7 +7,7 @@ in traditional MLP networks, such as diffculties arise whilst training and overf
 reactions to an input and its shifted version as they are not translation invariant [[2]](#2), CNNs are ideal for
 identifying features of data using filters (feature maps). 
 
-###Convolutional Neural Networks
+### Convolutional Neural Networks
 CNN is a multi layer perception that designed uniquely for pattern classification by extracting features in the data. 
 The pairs of convolutional and subsampling layers are used for extract features First layers capture general features 
 of the data and the last layers are able to capture more complex and specific data. 
@@ -23,7 +23,7 @@ the probability values for the classification. Thus, CNN is basically a deep neu
 having convolution and pooling functions in addition to the activation function for introducing non-linearity for 
 pattern classification by extracting features.
 
-###Dataset - CIFAR-10
+### Dataset - CIFAR-10
 We implement a deep CNN from scratch to classify 10 classes of images in the CIFAR-10 dataset [[3]](#3). 
 The CIFAR-10 dataset consists of 60000 32x32 color images in 10 classes, with 6000 images per class.
 
@@ -32,7 +32,7 @@ We further apply various optimization techniques to achieve the best classificat
 
 
 
-###Learning Algorithms
+### Learning Algorithms
 Leaning algorithms update weights of the connected neurons in a machine learning network.
 Various learning algorithms are utilized to train a CNN.
 In this experiment, we use three learning algorithms to inspect the model performance for the given dataset.
@@ -51,7 +51,7 @@ In this experiment, we use three learning algorithms to inspect the model perfor
 
 
 
-###Loss Functions
+### Loss Functions
 A loss function (or objective function) defines the target of the learning and implies the direction of the optimization for a model.
 Since, this is a multi-class category problem the related two loss functions are inspected.
 
@@ -60,7 +60,7 @@ Since, this is a multi-class category problem the related two loss functions are
 The categorical crossentropy is widlely used for mutli-class classification problems. It compares the distribution of 
 the predictions (the activations in the output layer, one for each class) with the true distribution, 
 where the probability of the true class is set to 1 and 0 for the other classes [[6]](#6). 
-    ![alt text](cat_ent.png)
+    ![alt text](cat_ent.PNG)
     
    To put it in a different way, the true class is represented as a one-hot encoded vector, and the closer the model’s outputs are to that vector, the lower the loss.
     
